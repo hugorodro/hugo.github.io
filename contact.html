@@ -59,41 +59,43 @@
         </div>
         <div class="main-content">
             <div class="form-input">
-                <form onsubmit="greet(); return false;">
+                <form 
+                    action="https://formspree.io/mwkrwrqo"
+                    method="POST">
                     <div class="row-1">
                         <div class="row-1-left">
                             <p>First Name</p>
-                            <input type="text" class="txt-small" id="txtFName" placeholder="ie. Alexander">
+                            <input type="text" name="First Name" class="txt-small" id="txtFName" placeholder="ie. Alexander">
                         </div>
                         <div class="row-space"></div>
                         <div class="row-1-mid">
                             <p>Last Name</p>
-                            <input type="text" class="txt-small" id="txtLName" placeholder="ie. Hamilton">
+                            <input type="text" name="Last Name" class="txt-small" id="txtLName" placeholder="ie. Hamilton">
                         </div>
                         <div class="row-space"></div>
                         <div class="row-1-right">
                             <p>Phone #</p>
-                            <input type="text" class="txt-small" id="txtPhone" placeholder="(123) 123 - 123">
+                            <input type="text" name="Phone #" class="txt-small" id="txtPhone" placeholder="(123) 123 - 123">
                         </div>
                     </div>
                     <div class="row-2">
                         <div class="row-2-left">
                             <p>Email</p>
-                            <input type="text" class="txt-mid" id="txtEmail" placeholder="ie. person@world.com">
+                            <input type="text" name="Reply to" class="txt-mid" id="txtEmail" placeholder="ie. person@world.com">
                         </div>
                         <div class="row-space"></div>
                         <div class="row-2-right">
                             <p>Subject</p>
-                            <input type="text" class="txt-mid" id="txtSubject" placeholder="ie. Job Offer">
+                            <input type="text" name="Subject" class="txt-mid" id="txtSubject" placeholder="ie. Job Offer">
                         </div>
                     </div>
                     <div class="message">
                         <p>Message</p>
-                        <textarea class="txt-large" id="txtMessage" placeholder="ie. You're hired!"></textarea>
+                        <textarea class="txt-large" name="Message" id="txtMessage" placeholder="ie. You're hired!"></textarea>
                     </div>
-                    <input onclick="sendEmail()" class="btn-submit" type="button" value="SUBMIT">
+                    <button class="btn-submit" type="submit">SUBMIT</button>
                 </form >
-                <script type=text/javascript>
+                <!-- <script type=text/javascript>
                     function sendEmail() {
                         let fName = document.querySelector('#txtFName').value;
                         let lName = document.querySelector('#txtLName').value;
@@ -116,7 +118,7 @@
 
                         // window.open(mailStr);
                     }
-                </script>
+                </script>  -->
 
             </div>
         </div>
