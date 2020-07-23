@@ -47,7 +47,13 @@ a {
 }
 
 .white {
+    
     color: white;
+}
+
+.white-back {
+    
+    background-color: white;
 }
 
 /* 
@@ -56,16 +62,12 @@ a {
 .nav-main {
     position: fixed;
     line-height: 60px;
-    background-color:white;
     width: 100%;
     opacity: 90%;
     height: 60px;
     top: 0px;
     z-index: 1;
-    -webkit-box-shadow: 5px 5px 15px 4px rgba(0,0,0,0.4);
-    -moz-box-shadow: 5px 5px 15px 4px rgba(0,0,0,0.2);
-    box-shadow: 5px 5px 15px 4px rgba(0,0,0,0.2);
-        
+         
 }
 nav a {
     position: relative;
@@ -82,9 +84,17 @@ nav a {
 }
 .nav-right {
     position: fixed;
+    
     right:5%;
     list-style-type: none;
 }
+
+.nav-right .btn-secondary {
+    background-color: white;
+    border: none;
+}
+
+
 
 li {
     float: left;

@@ -1,19 +1,56 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width = device-width, initial-scale=1.0">
-    <link href="main.css" rel="stylesheet">
-    <title>HUGO RODRIGUEZ</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;531;600;700;800;900&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" />
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="index.css" />
+
+    <title>Hello, world!</title>
 
 </head>
 
 <body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <a class="navbar-brand" href="#">HUGO RODRIGUEZ</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="contact.html">CONTACT<img src="images/email-24px.png" alt="person icon"
+                                class="filter-red"> <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">ABOUT<img src="images/account_box-24px.png" alt="person icon"
+                                class="filter-green"></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="ise.html">ISE<img src="images/engineering-24px.png" alt="person icon"
+                                class="filter-green"></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link disabled" href="dev.html">DEV<img src="images/code-24px.png" alt="person icon"
+                                class="filter-green"></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
     <div class="detail-lines">
         <div class="left-line-1 lines"></div>
         <div class="left-line-2 lines"></div>
@@ -29,73 +66,87 @@
 
     </div>
 
-    <nav class="nav-main">
-        <div class="nav-left">
-            <a href="index.html" class="logo">
-                <div class="rec"></div>HUGO RODRIGUEZ
-            </a>
-        </div>
-        <ul class="nav-right">
-            <li><a class="contact" href="contact.html">CONTACT<img src="images/email-24px.png" alt="email icon" class="filter-red"></a></li>
-            <li><a href="index.html">ABOUT<img src="images/account_box-24px.png" alt="person icon" class="filter-green"></a></li>
-            <li><a href="ise.html">ISE<img src="images/engineering-24px.png" alt="engineering-24px icon"class="filter-green"></a></li>
-            <li><a href="dev.html">DEV<img src="images/code-24px.png" alt="engineering-24px icon" class="filter-green"></a></li>
-        </ul>
-    </nav>
-
-    <div class="wrapper-content">
-        <div class="spacer"></div>
+    <main role="main" class="container">
+        <div class="container spacer"></div>
 
         <div class="title-row">
             <div class="line"></div>
             <div class="title-block">
                 <h1>ABOUT ME</h1>
             </div>
-            <div class="line-right"></div>
+            <div class="line"></div>
         </div>
-        <div class="top">
+
+        <div class="container top">
             <ui class="top-list">
                 <li>
-                    Welcome! I am currently in my last semester before graduating from the University of Florida with a B.S. in Industrial & Systems Engineering.
+                    Welcome! I am currently in my last semester before graduating from the University of Florida with a
+                    B.S. in Industrial & Systems Engineering.
                 </li>
                 <li>
-                    In order to create complex models and decision support systems, I was briefly exposed to programming in my coursework.
+                    In order to create complex models and decision support systems, I was briefly exposed to programming
+                    in my coursework.
 
                 </li>
                 <li>
-                    Two years ago, programming was an enigma to me. Now, it's a tool I can confidently use to overcome interesting challenges.
+                    Two years ago, programming was an enigma to me. Now, it's a tool I can confidently use to overcome
+                    interesting challenges.
                 </li>
             </ui>
         </div>
-        <div class="bottom">
-            <div class="flex-spacer"></div>
-            <div class="skills-box">
-                <a href="ise.html">
-                    <h2>INDUSTRIAL & SYSTEMS</h2>
-                </a>
-            </div>
-            <div class="flex-spacer-mid"></div>
-            <div class="skills-box">
-                <a href="dev.html">
-                    <h2>SOFTWARE DEVELOPMENT</h2>
-                </a>
-            </div>
-            <div class="flex-spacer"></div>
-        </div>
-        <div class="spacer"></div>
-    </div>
 
-    <footer>
-        <div class="footer-left">
-            <a href="https://github.com/hugorodro" target="_blank">GITHUB</a>
-            <a href="https://www.linkedin.com/in/hugo-rafael-rodriguez"
-                target="_blank">LINKEDIN</a>
-            <a href="Hugo_Rodriguez_Resume.pdf" target="_blank" >RESUME </a>
+        <div class="container bottom">
+            <div class="row">
+                <div class="col">
+                    <div class="container skills-box">
+                        <a href="dev.html" class="text-decoration-none">
+                            <h2>SOFTWARE DEVELOPMENT</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="container skills-box">
+                        <a href="ise.html" class="text-decoration-none">
+                            <h2>INDUSTRIAL & SYSTEMS</h2>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <p>2020&copy; HUGO RODRIGUEZ</p>
+
+        <div class="spacer"></div>
+    </main>
+
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-auto footer-left">
+                    <a href="https://github.com/hugorodro" target="_blank">GITHUB</a>
+                    <a href="https://www.linkedin.com/in/hugo-rafael-rodriguez" target="_blank">LINKEDIN</a>
+                    <a href="Hugo_Rodriguez_Resume.pdf" target="_blank">RESUME </a>
+                </div>
+                <div class="col-md-auto footer-right">
+                    <p>2020&copy; HUGO RODRIGUEZ</p>
+                </div>
+            </div>
+        </div>
 
     </footer>
 
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -1,0 +1,85 @@
+
+
+/* 
+* ---------- CONTENT --------------------
+ */
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.spacer {
+    flex: 2;
+}
+
+.title-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.line {
+height: 3px;
+background-color: var(--main-red);
+flex:1;
+margin: auto;
+
+}
+
+.title-row {
+margin-bottom: 60px;
+
+}
+.title-block {
+    background-color: var(--main-green);
+    padding: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+
+}
+
+.top {
+    margin-bottom: 60px;
+
+}
+
+.top p{
+    font-size: 20px;
+    max-width: 750px;
+}
+
+.top-list li{
+    margin-top: 15px;
+    font-size: 20px;
+    color: var(--main-grey);
+    line-height: 1.5;
+    max-width: 70%;
+    margin: auto;
+    padding-bottom: 15px;
+}
+
+.bottom {
+    line-height: 60px;
+    width: 100%;
+    padding-left: 5%;
+    padding-right:5%;
+}
+
+.skills-box {
+    background-color: white;
+    margin: auto;
+    text-align: center;
+    width: 360px;
+    height: 120px;
+    margin-bottom: 30px;
+    -webkit-box-shadow: 8px 8px 18px 3px rgba(0,0,0,0.18);
+    -moz-box-shadow: 8px 8px 18px 3px rgba(0,0,0,0.18);
+    box-shadow: 8px 8px 18px 3px rgba(0,0,0,0.18);
+} 
+
+.skills-box h2 {
+    line-height: 120px;
+}
+
+
+ 

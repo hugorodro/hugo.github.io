@@ -10,6 +10,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;531;600;700;800;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
 </head>
 
 <body>
@@ -37,12 +40,22 @@
         <ul class="nav-right">
             <li><a class="contact" href="contact.html">CONTACT<img src="images/email-24px.png" alt="email icon"
                         class="filter-red"></a></li>
-            <li><a href="index.html">ABOUT<img src="images/account_box-24px.png" alt="person icon"
-                        class="filter-green"></a></li>
-            <li><a href="ise.html">ISE<img src="images/engineering-24px.png" alt="engineering-24px icon"
-                        class="filter-green"></a></li>
-            <li><a href="dev.html">DEV<img src="images/code-24px.png" alt="engineering-24px icon"
-                        class="filter-green"></a></li>
+            <li>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="images/baseline_apps_black_18dp.png" alt="navigation icon">
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="index.html">About<img src="images/account_box-24px.png"
+                                alt="person icon" class="filter-green"></a>
+                        <a class="dropdown-item" href="ise.html">About<img src="images/engineering-24px.png"
+                                alt="engineering icon" class="filter-green"></a>
+                        <a class="dropdown-item" href="dev.html">About<img src="images/code-24px.png"
+                                alt="development icon" class="filter-green"></a>
+                    </div>
+                </div>
+            </li>
         </ul>
     </nav>
 
@@ -113,7 +126,15 @@
 
     </footer>
 
-
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
 
 </body>
 
