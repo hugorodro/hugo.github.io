@@ -1,21 +1,56 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width = device-width, initial-scale=1.0">
-    <link href="contact.css" rel="stylesheet">
-    <title>HUGO RODRIGUEZ</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;531;600;700;800;900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        rel="stylesheet" />
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="contact.css" />
+
+    <title>Hello, world!</title>
 
 </head>
 
 <body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <a class="navbar-brand" href="/">HUGO RODRIGUEZ</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="contact.html">CONTACT<img src="images/email-24px.png"
+                                alt="person icon" class="filter-red"> <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">ABOUT<img src="images/account_box-24px.png"
+                                alt="person icon" class="filter-green"></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="ise.html">ISE<img src="images/engineering-24px.png" alt="person icon"
+                                class="filter-green"></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link disabled" href="dev.html">DEV<img src="images/code-24px.png"
+                                alt="person icon" class="filter-green"></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
     <div class="detail-lines">
         <div class="left-line-1 lines"></div>
         <div class="left-line-2 lines"></div>
@@ -31,111 +66,90 @@
 
     </div>
 
-    <nav class="nav-main">
-        <div class="nav-left">
-            <a href="index.html" class="logo">
-                <div class="rec"></div>HUGO RODRIGUEZ
-            </a>
-        </div>
-        <ul class="nav-right">
-            <li><a class="contact" href="contact.html">CONTACT<img src="images/email-24px.png" alt="email icon"
-                        class="filter-red"></a></li>
-            <li>
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <img src="images/baseline_apps_black_18dp.png" alt="navigation icon">
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="index.html">About<img src="images/account_box-24px.png"
-                                alt="person icon" class="filter-green"></a>
-                        <a class="dropdown-item" href="ise.html">About<img src="images/engineering-24px.png"
-                                alt="engineering icon" class="filter-green"></a>
-                        <a class="dropdown-item" href="dev.html">About<img src="images/code-24px.png"
-                                alt="development icon" class="filter-green"></a>
-                    </div>
-                </div>
-            </li>
-        </ul>
-    </nav>
-
-
-    <div class="wrapper-content">
-        <div class="spacer"></div>
+    <main role="main" class="container">
         <div class="title-row">
             <div class="line"></div>
             <div class="title-block">
                 <h1>CONTACT</h1>
             </div>
-            <div class="line-right"></div>
+            <div class="line"></div>
         </div>
-        <div class="main-content">
-            <div class="form-input">
-                <form action="https://formspree.io/mwkrwrqo" method="POST">
-                    <div class="row-1">
-                        <div class="row-1-left">
-                            <p>First Name</p>
-                            <input type="text" name="First Name" class="txt-small" id="txtFName"
-                                placeholder="ie. Alexander">
+
+        <div class="container form-container">
+            <form action="https://formspree.io/mwkrwrqo" method="POST">
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col">
+                            <label for="inputFName">First Name</label>
+                            <input name="First Name" type="text" class="form-control" placeholder="Enter first name" id="inputFName">
                         </div>
-                        <div class="row-space"></div>
-                        <div class="row-1-mid">
-                            <p>Last Name</p>
-                            <input type="text" name="Last Name" class="txt-small" id="txtLName"
-                                placeholder="ie. Hamilton">
+                        <div class="col">
+                            <label for="inputLName">Last Name</label>
+                            <input name="Last Name" type="text" class="form-control" placeholder="Enter Last name" id="inputLName">
                         </div>
-                        <div class="row-space"></div>
-                        <div class="row-1-right">
-                            <p>Phone #</p>
-                            <input type="text" name="Phone #" class="txt-small" id="txtPhone"
-                                placeholder="(123) 123 - 123">
+                        <div class="col">
+                            <label for="inputPhone">Phone #</label>
+                            <input name="Phone #" type="text" class="form-control" placeholder="Enter phone number" id="inputPhone">
                         </div>
                     </div>
-                    <div class="row-2">
-                        <div class="row-2-left">
-                            <p>Email</p>
-                            <input type="text" name="Reply to" class="txt-mid" id="txtEmail"
-                                placeholder="ie. person@world.com">
+                </div>
+                <div class="form-group">
+                    <div class="row">
+    
+                        <div class="col">
+                            <label for="inputEmail">Email address</label>
+                            <input name="Reply To" type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp"
+                                placeholder="Enter email">
                         </div>
-                        <div class="row-space"></div>
-                        <div class="row-2-right">
-                            <p>Subject</p>
-                            <input type="text" name="Subject" class="txt-mid" id="txtSubject"
-                                placeholder="ie. Job Offer">
-                        </div>
+                        <div class="col">
+                            <label for="inputSubject">Subject</label>
+                            <input name="Subject" class="form-control" id="inputSubject" placeholder="Enter subject"></div>
                     </div>
-                    <div class="message">
-                        <p>Message</p>
-                        <textarea class="txt-large" name="Message" id="txtMessage"
-                            placeholder="ie. You're hired!"></textarea>
-                    </div>
-                    <button class="btn-submit" type="submit">SUBMIT</button>
-                </form>
-                <div class="spacer"></div>
+                </div>
+    
+                <div class="form-group">
+                    <label for="inputMessage">Message</label>
+                    <textarea name="Message" class="form-control" id="inputMessage" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-submit">SUBMIT</button>
+                </div>
+            </form>
+        </div>
+        
+
+    </main>
+
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-auto footer-left">
+                    <a href="https://github.com/hugorodro" target="_blank">GITHUB</a>
+                    <a href="https://www.linkedin.com/in/hugo-rafael-rodriguez" target="_blank">LINKEDIN</a>
+                    <a href="Hugo_Rodriguez_Resume.pdf" target="_blank">RESUME </a>
+                </div>
+                <div class="col-md-auto footer-right">
+                    <p>2020&copy; HUGO RODRIGUEZ</p>
+                </div>
             </div>
         </div>
-    </div>
-
-    <footer>
-        <div class="footer-left">
-            <a href="https://github.com/hugorodro" target="_blank">GITHUB</a>
-            <a href="https://linkedin.com/in/hugo-rafael-rodriguez" target="_blank">LINKEDIN</a>
-            <a href="Hugo_Rodriguez_Resume.pdf" target="_blank">RESUME </a>
-        </div>
-        <p>2020&copy; HUGO RODRIGUEZ</p>
 
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>
 
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
