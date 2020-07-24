@@ -31,23 +31,17 @@ margin-bottom: 60px;
 
 .top {
     margin-bottom: 60px;
-
+    text-align: justify;
 }
 
 .top p{
+    padding:15px;
+    margin: auto;
     font-size: 20px;
     max-width: 750px;
 }
 
-.top-list li{
-    margin-top: 15px;
-    font-size: 20px;
-    color: var(--main-grey);
-    line-height: 1.5;
-    max-width: 70%;
-    margin: auto;
-    padding-bottom: 15px;
-}
+
 
 .bottom {
     line-height: 60px;
