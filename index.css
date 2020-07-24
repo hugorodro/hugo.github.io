@@ -59,18 +59,30 @@ margin-bottom: 60px;
 .skills-box {
     background-color: white;
     margin: auto;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     text-align: center;
-    width: 360px;
-    height: 120px;
+    max-width: 360px;
+    min-height: 120px;
     margin-bottom: 30px;
     -webkit-box-shadow: 8px 8px 18px 3px rgba(0,0,0,0.18);
     -moz-box-shadow: 8px 8px 18px 3px rgba(0,0,0,0.18);
     box-shadow: 8px 8px 18px 3px rgba(0,0,0,0.18);
-} 
+    margin-top:auto;
+    border:none;
+    cursor: pointer;
+        
+}
+.skills-box:hover {
+    border: 2px solid var(--main-red);
+}
 
 .skills-box h2 {
-    line-height: 120px;
+    padding: 20px;
 }
+
 
 
  
